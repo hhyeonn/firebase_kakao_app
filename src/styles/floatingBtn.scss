@@ -1,0 +1,22 @@
+/* floatingBtn.scss */
+.chat_fa_btn {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;height: 60px;
+      background-color: #ffe84c;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px #000004;
+      font-size: 18px;
+      color: #513736;
+      transition: color 500ms linear 0s, background 500ms linear 0s;
+      &:hover {
+        background: #513736;
+        color: #ffe84c;
+      }
+    }
+  }

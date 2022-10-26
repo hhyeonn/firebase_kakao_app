@@ -1,0 +1,147 @@
+/* MyProfile.scss */
+@import url(common.scss);
+
+/* header(MyProfile) */
+div.MyProfile {
+  height: 100vh;
+  header.myProfile {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;left: 0;
+    box-sizing: border-box;
+    width: 100%;height: 64px;
+    padding: 0 15px;
+    background: #513736;
+    color: #fff;
+    .status_bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 37.5%;
+      div {
+        flex: 1;
+        &:nth-child(1) {
+          text-align: left;
+        }
+        &:nth-child(2) {
+          text-align: center;
+        }
+        &:nth-child(3) {
+          text-align: right;
+        }
+        * {
+          padding: 3px;
+        }
+      }
+    }
+    .title_bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 62.5%;
+      * {
+        flex: 1;
+        font-size: 20px;
+      }
+      h1 {
+        order: 2;
+        text-align: center;
+        span {
+          color: #f8ea65;
+        }
+      }
+      .left_item {
+        order: 1;
+        line-height: 1.5;
+        text-align: left;
+        opacity: 0.5;
+        .icon {
+          color: #fff;
+        }
+      }
+      .right_item {
+        order: 3;
+        line-height: 2;
+        text-align: right;
+        .icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  /* main */
+  main.ProfileInfo {
+    height: calc(100% - 10px);
+
+    .background {
+      height: 65%;
+      background: url(../images/bg_default.png) no-repeat 0 0;
+      background-size: cover;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+    .my_profile_img {
+      position: absolute;
+      top: -65px;left: 50%;
+      width: 100px;height: 100px;
+      margin-left: -50px;
+      img{
+        width: 100%;height: 100%;
+        object-fit: cover;border-radius: 50%;
+      }
+    }
+    .profile_cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 45px;
+      input {
+        width: 148px;
+        height: 24px;
+        margin: 15px 0 20px;
+        padding: 0 5px;
+        border: none;
+        text-align: center;
+      }
+    }
+    .profile_name {
+      margin-top: 15px;
+      font-size: 16px;
+    }
+
+    .profile_menu {
+      display: flex;
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 6px;
+        span {
+          display: block;
+          width: 52px;height: 52px;
+          margin-bottom: 15px;
+          border-radius: 50%;
+          background-color: #f2f2f2;
+          color: #513736;
+          font-size: 20px;
+          line-height: 52px;
+          text-align: center;
+        }
+        b {
+          font-weight: normal;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+/* Find.scss */
+@import url(common.scss);
+
+/* header(Find) */
+header.find {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 64px;
+  padding: 0 15px;
+  background: #513736;
+  color: #fff;
+  .status_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 37.5%;
+    div {
+      flex: 1;
+      &:nth-child(1) {
+        text-align: left;
+      }
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:nth-child(3) {
+        text-align: right;
+      }
+      * {
+        padding: 3px;
+      }
+    }
+  }
+  .title_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 62.5%;
+    * {
+      flex: 1;
+      font-size: 20px;
+    }
+    h1 {
+      order: 2;
+      text-align: center;
+      span {
+        color: #f8ea65;
+      }
+    }
+    .left_item {
+      order: 1;
+      line-height: 1.5;
+      text-align: left;
+      opacity: 0.5;
+      .icon {
+        color: #fff;
+      }
+    }
+    .right_item {
+      order: 3;
+      line-height: 2;
+      text-align: right;
+      .icon {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+/* find method */
+.find_method {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  background-color: #eee;
+  li {
+    overflow: hidden;
+    flex: 1;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #513736;
+      transition: transform 300ms linear 0s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      .find_method_icon {
+        font-size: 22px;
+        margin: 5px 0;
+      }
+    }
+  }
+}
+/* recommend_section */
+.recommend_section {
+  header {
+    height: 22px;
+    line-height: 22px;
+    text-indent: 15px;
+    color: #8e9399;
+  }
+  ul {
+    li {
+      height: 54px;
+      line-height: 54px;
+      border-top: 1px solid #ebebeb;
+      border-bottom: 1px solid #ebebeb;
+      text-align: center;
+      color: #8e9399;
+      font-size: 14px;
+    }
+  }
+}

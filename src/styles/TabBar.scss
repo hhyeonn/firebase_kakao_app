@@ -1,0 +1,35 @@
+/* tab.css */
+.tab_bar {
+    position: fixed;
+    bottom: 0;left: 0;width: 100%;height: 4.5%;
+    min-height: 54px;
+    border-top: 1px solid #c1c1c1;
+    background-color: #f7f7f7;
+    ul {
+      display: flex;margin-top: 10px;
+      li {
+        color: #c0c1c2;
+        display: flex;justify-content: center;
+        align-items: center;text-align: center;
+        flex: 1;
+        // transition: transform 500ms linear 0s;
+        .tab_bar_link {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #c0c1c2;
+        }
+        .tab_bar_icon {
+          color: #c0c1c2;
+          display: block;
+          font-size: 20px;
+        }
+        // &:hover {transform: scale(1.1);}
+        /* hover 탭바 */
+        a.active {
+          color: #513736;
+          * {color: #513736;}
+        }
+      }
+    }
+  }

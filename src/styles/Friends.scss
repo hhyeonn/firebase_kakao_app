@@ -1,0 +1,184 @@
+/* Friends.scss */
+@import url(common.scss);
+
+/* header(Friends) */
+header.friends {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 64px;
+  padding: 0 15px;
+  background: #513736;
+  color: #fff;
+  .status_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 37.5%;
+    div {
+      flex: 1;
+      &:nth-child(1) {
+        text-align: left;
+      }
+      &:nth-child(2) {
+        text-align: center;
+      }
+      &:nth-child(3) {
+        text-align: right;
+      }
+      * {
+        padding: 3px;
+      }
+    }
+  }
+  .title_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 62.5%;
+    * {
+      flex: 1;
+      font-size: 20px;
+    }
+    h1 {
+      order: 2;
+      text-align: center;
+      span {
+        color: #f8ea65;
+      }
+    }
+    .left_item {
+      order: 1;
+      line-height: 1.5;
+      text-align: left;
+      opacity: 0.5;
+      .icon {
+        color: #fff;
+      }
+    }
+    .right_item {
+      order: 3;
+      line-height: 2;
+      text-align: right;
+      .icon {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* 검색창 */
+.serach_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  padding-top: 64px;
+  min-height: 53px;
+  .serach_inner {
+    display: flex;
+    justify-content: space-between;
+    width: 88%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: #f1f2f4;
+    .search_icon {
+      margin-left: 15px;
+      color: #bebcc1;
+      font-size: 16px;
+      align-self: center;
+    }
+    input {
+      width: 90%;
+      padding: 0 15px;
+      border: none;
+      background-color: transparent;
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/* main */
+main {
+  height: 85.8%;
+
+  /* main_section */
+  .main_section {
+    header {
+      height: 32px;
+      padding-left: 15px;
+      border: 1px solid #ebebeb;
+      border-right: none;
+      border-left: none;
+      color: #b6b5b1;
+      line-height: 32px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      li {
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          font-size: 16px;
+          .profile_img {
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .profile_name {
+            flex: auto;
+          }
+          .profile_messages {
+            height: 30px;
+            margin-right: 15px;
+            padding: 0 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            color: #8e9399;
+            font-size: 10px;
+            line-height: 30px;
+          }
+        }
+      }
+    }
+
+    .chats_img {
+      width: 50px;
+      height: 50px;
+      margin: 15px;
+    }
+    .chats_cont {
+      display: flex;
+      flex: auto;
+      flex-direction: column;
+      justify-content: center;
+      .chats_name {
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      .chats_latest {
+        color: #8e9399;
+        font-size: 12px;
+      }
+    }
+    .chats_time {
+      margin-right: 15px;
+      color: #8e9399;
+      font-size: 12px;
+    }
+  }
+}
