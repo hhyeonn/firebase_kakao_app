@@ -11,7 +11,7 @@ function MyProfile() {
       </header>
       <ul>
         <li>
-          <Link to='/profile'>
+          <Link to='/MyProfile'>
             <div>
               <span className='profile_img empty'>
                 <img src={myinfo[0].img} alt={myinfo[0].name} />

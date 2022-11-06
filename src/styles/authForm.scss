@@ -1,0 +1,46 @@
+.loginForm{
+    text-align: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .authInput{
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #f3f3f3;
+            background-color: #fff;
+            color: #b6b6b6;
+            font-size: 12px;
+            box-shadow: 0 0 2px;
+            &.authSubmit{
+                max-width: 322px;
+                margin-top: 10px;
+                border: none;
+                background-color: #413632;
+                color: #f9e000;
+                font-weight: bold;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        .authError{
+            margin-top: 15px;
+            color: tomato;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .authSwitch{
+        display: inline-block;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: #000;
+        font-size: 12px;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

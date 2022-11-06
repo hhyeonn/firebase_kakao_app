@@ -48,7 +48,7 @@ header.Chatting {
         text-align: right;
       }
       * {
-        padding: 3px;
+        padding: 0 3px;
       }
     }
   }
@@ -177,7 +177,7 @@ footer {
   background-color: #eee;
 
   .plus_btn .icon {
-    padding-left: 15px;
+    padding-left: 12px;
     color: #b3b4b4;
     font-size: 16px;
   }
@@ -194,25 +194,29 @@ footer {
     width: 100%;
   }
   .text_field {
-    width: calc(100% - 40px);
-    height: 32px;
+    width: calc(100% - 50px);
+    height: 30px;
+    border: none;
+    margin-right: 10px;
   }
   .emoticon_btn {
     position: absolute;
-    right: 45px;
+    bottom: 7px;
+    right: 60px;
     .icon {
       color: #b3b4b4;
+      font-size: 16px;
     }
   }
-  .voice_btn {
+  .send_btn {
     display: block;
     width: 34px;
-    height: 37px;
-    margin-right: 5px;
+    height: 35px;
+    margin-right: 6px;
     background-color: #fee73a;
     color: #513736;
     font-size: 16px;
-    line-height: 37px;
+    line-height: 40px;
     text-align: center;
   }
 }

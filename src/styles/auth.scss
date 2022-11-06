@@ -1,0 +1,35 @@
+@import url(common.scss);
+.auth{
+    background-color: #f9e000;
+    .header{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            li{padding: 10px;}
+        }
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 120px;
+        margin-bottom: 80px;
+        .icon{font-size: 200px;}
+    }
+    .authContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .authBtn{
+            width: 150px;
+            padding: 10px 0px;
+            margin-bottom: 40px;
+            border: 1px solid #b9b9b9;
+            border-radius: 20px;
+            font-size: 12px;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+}
