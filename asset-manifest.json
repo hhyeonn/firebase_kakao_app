@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/firebase_kakao_app/static/css/main.c9e2be26.css",
+    "main.js": "/firebase_kakao_app/static/js/main.4e5e84f7.js",
+    "static/media/kakaofriends.png": "/firebase_kakao_app/static/media/kakaofriends.84375bb9f89d79ccd760.png",
+    "static/media/path.png": "/firebase_kakao_app/static/media/path.7d00edf73f07bdcecc6d.png",
+    "static/media/kakaostory.png": "/firebase_kakao_app/static/media/kakaostory.572f3ce5bf10fbdaac9d.png",
+    "static/media/bg_default.png": "/firebase_kakao_app/static/media/bg_default.82687b4e75ad8b89fa96.png",
+    "index.html": "/firebase_kakao_app/index.html",
+    "main.c9e2be26.css.map": "/firebase_kakao_app/static/css/main.c9e2be26.css.map",
+    "main.4e5e84f7.js.map": "/firebase_kakao_app/static/js/main.4e5e84f7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9e2be26.css",
+    "static/js/main.4e5e84f7.js"
+  ]
+}
