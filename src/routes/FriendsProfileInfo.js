@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import personImage from '../data/personImage.json';
 import '../styles/MyProfile.scss';
 
-function FriendsProfile() {
+function FriendsProfileInfo() {
   const location = useLocation();
   console.log(location);
   const { id, name, email } = location.state;
@@ -40,7 +40,7 @@ function FriendsProfile() {
           </div>
           <div className='profile_cont'>
             <span className='profile_name'>{name}</span>
-            <input type='email' className='profile_email' placeholder={email} />
+            <span>{email}</span>
             <ul className='profile_menu'>
               <li>
                 <span>
@@ -62,4 +62,4 @@ function FriendsProfile() {
   );
 }
 
-export default FriendsProfile;
+export default FriendsProfileInfo;
