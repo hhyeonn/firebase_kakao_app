@@ -132,15 +132,15 @@ function Chatting({userObj}) {
         <span className='plus_btn'>
           <FaPlus className='icon' />
         </span>
-        <form action='/' method='post'>
+        <form onSubmit={onSubmit}>
           <fieldset className='text_box'>
             <legend className='blind'>채팅 입력창</legend>
             <label for='chatting' className='blind'>채팅 입력</label>
-            <input type='text' id='chatting' className='text_field' onChange={onChange} value={chat} />
+            <input autoFocus type='text' id='chatting' className='text_field' onChange={onChange} value={chat} />
             <span className='emoticon_btn'>
               <FaSmile className='icon' />
             </span>
-            <span className='send_btn'>
+            <span onClick={onSubmit} className='send_btn'>
               <BiSend className='icon' />
             </span>
           </fieldset>
