@@ -123,7 +123,7 @@ function Chatting({userObj}) {
           </span>
         </div>
 
-        <div className='chat_box new'>
+        <div className='chat_box my new'>
           {chat && chats.map((chat) => <NewChat chatObj={chat} isOwner={chat.createId === userObj.uid} />)}
         </div>
       </main>
