@@ -7,7 +7,7 @@ import MyProfile from './routes/MyProfile';
 import Chatting from './routes/Chatting';
 import Find from './routes/Find';
 import More from './routes/More';
-import FriendsProfile from './routes/FriendsProfile';
+import FriendsProfileInfo from './routes/FriendsProfileInfo';
 
 function AppRouter({isLoggedIn, userObj}) {
     return (
@@ -21,12 +21,11 @@ function AppRouter({isLoggedIn, userObj}) {
                 <Route path='/' element={<Auth />} />
                 )}
                 <Route path='/myprofile' element={<MyProfile userObj={userObj} />} />
-                <Route path='/friendsprofile' element={<FriendsProfile userObj={userObj} />} />
+                <Route path='/friendsprofileinfo' element={<FriendsProfileInfo userObj={userObj} />} />
                 <Route path='/Chats' element={<Chats />} />
                 <Route path='/chatting' element={<Chatting userObj={userObj} />} />
                 <Route path='/find' element={<Find />} />
                 <Route path='/more' element={<More userObj={userObj} />} />
-                <Route />
             </Routes>
         </BrowserRouter>
       )
