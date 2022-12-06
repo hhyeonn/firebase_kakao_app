@@ -124,19 +124,31 @@ main.Chatting {
 /* my */
 .my {
   align-items: flex-end;
+  align-self: flex-end;
   max-width: 240px;
   margin-right: 10px;
-  align-self: flex-end;
+  .chat {
+    background-color: #ffe73a;
+  }
+  .chat_time {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    width: 50px;
+    opacity: 0.5;
+  }
+  .newchat_time {
+    position: relative;
+    right: 100px;
+    opacity: 0.5;
+    .icon {
+      margin-right: 5px;
+      cursor: pointer;
+    }
+  }
 }
-.my .chat {
-  background-color: #ffe73a;
-}
-.my .chat_time {
-  position: absolute;
-  bottom: -5px;
-  left: -30px;
-  width: 50px;
-  opacity: 0.5;
+.my.new {
+  margin-top: 30px;
 }
 
 /* other */
@@ -145,8 +157,8 @@ main.Chatting {
   margin-left: 55px;
   .chat_time {
     position: absolute;
-    right: -60px;
-    bottom: -5px;
+    right: -55px;
+    bottom: 5px;
     width: 50px;
     opacity: 0.5;
   }
@@ -218,5 +230,6 @@ footer {
     font-size: 16px;
     line-height: 40px;
     text-align: center;
+    cursor: pointer;
   }
 }
